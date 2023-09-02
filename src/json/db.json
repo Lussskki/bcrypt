@@ -1,6 +1,7 @@
 [
   {
-    "username": "lukaguledani123@gmail.com",
-    "password": "$2b$10$8F6yRyk3mtf4PX/ZuPdZ2OiF4JQwye.3pWxO/kZBUGRAqpB.mB5XK"
+    "username": "$2b$10$HnwXc/t5x5rcHRArIt4zkeewupA8z0CkTzscFE5tybBi1AcONfU9e",
+    "password": "$2b$10$o6GKXnYgcfKHKpTilPRITuPAtwulgabbG/XaOz1tDbD6RXovqpH0K",
+    "isAdmin": true
   }
 ]
