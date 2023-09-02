@@ -6,7 +6,7 @@ import bodyParser from 'body-parser'
 const app = express()
       dotenv.config()    
 
-app.use(express.static('public'))
+
 app.use(bodyParser.json())
 const db = JSON.parse(fs.readFileSync('src/json/db.json').toString())
 
@@ -19,8 +19,8 @@ app.get('/',(req,res)=>{
 
 app.post('/signup', async (req, res) => {
     try {
-        const username = req.body.username;
-        const password = req.body.password;
+        const username = req.body.username
+        const password = req.body.password
 
         const adminEmail = process.env.ADMIN_EMAIL
         const adminPassword = process.env.ADMIN_PASSWORD
@@ -44,7 +44,7 @@ app.post('/signup', async (req, res) => {
             isAdmin: true, 
         }
         // Push the user object into the db array
-        db.push(admin);
+        db.push(admin)
         // Write the updated db array to the JSON file
         fs.writeFileSync('src/json/db.json', JSON.stringify(db))
         res.status(200).json({ message: 'Signed up successfully' })
